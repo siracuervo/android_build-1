@@ -437,6 +437,9 @@ endif
 ifeq ($(MAKECMDGOALS),magicbrownies)
 dont_bother := true
 endif
+ifeq ($(MAKECMDGOALS),dirty)
+dont_bother := true
+endif
 ifeq ($(MAKECMDGOALS),appclean)
 dont_bother := true
 endif
@@ -982,6 +985,14 @@ novo:
 magicbrownies:
 	@rm -rf $(OUT_DIR)/target/product/*
 	@echo -e ${CL_GRN}"Enjoy your magical adventure!"${CL_RST}
+
+# Clears out zip and build.prop
+.PHONY: dirty
+dirty:
+	@rm -rf $(OUT_DIR)/target/product/*/system/build.prop
+	@rm -rf $(OUT_DIR)/target/product/*/*.zip
+	@rm -rf $(OUT_DIR)/target/product/*/*.md5sum
+	@echo -e ${CL_GRN}"build.prop and zip files erased"${CL_RST}	
 
 # Clears out all apks
 .PHONY: appclean
