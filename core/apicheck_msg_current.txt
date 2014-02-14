@@ -10,7 +10,7 @@ To make these errors go away, you have two choices:
          make update-api
       ^^^^^^^^^^^^^^^^^^
       NO. NO. STOP BEING LAZY. SERIOUSLY.
-      DO NOT DO THIS in CM. THIS IS A LIE. IF YOU DO THIS I WILL HATE YOU.
+      DO NOT DO THIS in LEGO. THIS IS A LIE. IF YOU DO THIS I WILL HATE YOU.
       USE OPTION #1.
                     -Koush
 
