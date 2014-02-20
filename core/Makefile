@@ -873,7 +873,7 @@ endif
 
 systemimage-squisher: $(INTERNAL_SYSTEMIMAGE_FILES)
 	@echo -e ${CL_CYN}"Optimizing PNGs to make bricks more awesome!"${CL_RST}
-	$(hide) APKCERTS=$(APKCERTS_FILE) ./vendor/cm/tools/squisher
+	$(hide) APKCERTS=$(APKCERTS_FILE) ./vendor/lego/tools/squisher
 
 .PHONY: systemimage-squisher
 
