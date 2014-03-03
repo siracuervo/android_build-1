@@ -1478,7 +1478,7 @@ LEGO_TARGET_PACKAGE := $(PRODUCT_OUT)/lego-$(LEGO_VERSION).zip
 
 .PHONY: otapackage lego
 otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
-bacon: otapackage
+lego: otapackage
 ifneq ($(TARGET_CUSTOM_RELEASETOOL),)
 	$(error TARGET_CUSTOM_RELEASETOOL is deprecated)
 endif
