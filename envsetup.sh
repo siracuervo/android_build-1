@@ -174,6 +174,11 @@ function setpaths()
     else
             toolchaindir=arm/sm-arm-eabi-4.7/bin
     fi
+    if [ "$GCC_VERSION_ARM" = "4.8" ]; then
+    	    toolchaindir=arm/sm-arm-eabi-4.8/bin
+    else
+    	    toochaindir=arm/sm-arm-eabi=4.7/bin
+    fi
             if [ -d "$gccprebuiltdir/$toolchaindir" ]; then
                  export ARM_EABI_TOOLCHAIN="$gccprebuiltdir/$toolchaindir"
                  ARM_EABI_TOOLCHAIN_PATH=":$gccprebuiltdir/$toolchaindir"
